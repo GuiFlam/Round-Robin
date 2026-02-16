@@ -58,6 +58,7 @@ int processus_liberer(processus_t *p) {
 
 */
 int processus_execute(processus_t *p, int quantum) {
+  if(p == NULL) return -1;
 
   p->duree -= quantum;
 
